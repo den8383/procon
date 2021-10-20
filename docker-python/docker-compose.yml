@@ -1,0 +1,9 @@
+services:
+  test:
+    build: ./Dockerfiles/python/
+    container_name: procon-python-container
+    volumes:
+      - ../:/var/www
+    working_dir: /var/www/src 
+    command: /bin/bash -c "cd /var/www/docker-python/app && pipenv install && /bin/bash"
+    tty: true
