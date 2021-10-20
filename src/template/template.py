@@ -1,5 +1,6 @@
 import sys
 import collections
+import numpy
 
 num = input()
 lines = input().split()

@@ -5,5 +5,5 @@ services:
     volumes:
       - ../:/var/www
     working_dir: /var/www/src 
-    command: /bin/bash -c "cd /var/www/docker-python/app && pipenv install && /bin/bash"
+    command: /bin/bash -c "cd /var/www/docker-python/app && pipenv install --system && /bin/bash"
     tty: true
