@@ -1,7 +1,8 @@
 import sys
 import collections
+import itertools
 
-num = input()
+num = int(input())
 lines = input().split()
 #lines = list(map(int,lines))
 print(num)
