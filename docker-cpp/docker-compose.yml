@@ -1,0 +1,9 @@
+services:
+  test:
+    build: ./Dockerfiles/cpp/
+    container_name: procon-cpp-container
+    volumes:
+      - ../:/var/www
+    working_dir: /var/www/src 
+      #command: /bin/bash -c "cd /var/www/docker-python/app && pipenv install --system && /bin/bash"
+    tty: true
